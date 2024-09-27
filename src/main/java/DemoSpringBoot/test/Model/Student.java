@@ -38,6 +38,23 @@ public class Student {
         this.name = name;
     }
 
+    public Student(){
+
+    }
+
+    public Student(Long id, String name){
+            this.name = name;
+            this.id = id;
+
+    }
+
+    public Student(Long id, String name, Department department) {
+        this.id = id;
+        this.name = name;
+        this.department = department;
+    }
+
+
 
     @Override
     public boolean equals(Object o) {
